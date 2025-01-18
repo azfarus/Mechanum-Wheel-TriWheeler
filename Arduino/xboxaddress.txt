@@ -1,0 +1,6 @@
+Device 48:74:12:73:C8:0A 48-74-12-73-C8-0A
+Device C0:3F:1C:3C:64:44 020530000597
+Device A0:5A:5E:82:6A:9D Xbox Wireless Controller
+Device 7A:5D:2E:A8:48:F7 7A-5D-2E-A8-48-F7
+Device 78:02:B7:4B:E0:47 Haylou Solar
+

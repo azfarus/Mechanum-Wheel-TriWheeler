@@ -1,0 +1,8 @@
+prefix=/data/MyProjects/TriangularRobot/ros_workspace/install
+
+Name: TriangularRobot
+Description: Description of TriangularRobot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

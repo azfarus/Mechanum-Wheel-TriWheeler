@@ -1,0 +1,8 @@
+{
+    "board": "esp32-bluepad32:esp32:espea32",
+    "sketch": "Arduino\\robot\\robot.ino",
+    "port": "COM3",
+    "programmer": "esptool",
+    "output": "./build",
+    "configuration": "FlashFreq=80,UploadSpeed=921600,DebugLevel=none,EraseFlash=all"
+}

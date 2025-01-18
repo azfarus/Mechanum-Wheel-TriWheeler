@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /data/MyProjects/TriangularRobot/ros_workspace/devel/setup.sh

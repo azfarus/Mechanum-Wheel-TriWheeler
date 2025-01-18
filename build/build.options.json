@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "..\\..\\..,..\\..\\..,..\\..\\..,..\\..\\..,..\\..\\..",
+  "builtInToolsFolders": "",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "",
+  "fqbn": "esp32-bluepad32:esp32:espea32:FlashFreq=80,UploadSpeed=921600,DebugLevel=none,EraseFlash=all",
+  "hardwareFolders": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "C:\\Users\\samaz\\Documents\\Arduino\\libraries",
+  "runtime.ide.version": "10607",
+  "sketchLocation": "G:\\MyProjects\\TriangularRobot\\Arduino\\robot"
+}

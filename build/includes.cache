@@ -1,0 +1,162 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\cores\\esp32"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\variants\\espea32"
+  },
+  {
+    "Sourcefile": "G:\\MyProjects\\TriangularRobot\\build\\sketch\\robot.ino.cpp",
+    "Include": "PCA9685.h",
+    "Includepath": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\PCA9685_16-Channel_PWM_Driver_Module_Library\\src"
+  },
+  {
+    "Sourcefile": "G:\\MyProjects\\TriangularRobot\\build\\sketch\\robot.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\Wire\\src"
+  },
+  {
+    "Sourcefile": "G:\\MyProjects\\TriangularRobot\\build\\sketch\\robot.ino.cpp",
+    "Include": "BasicLinearAlgebra.h",
+    "Includepath": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\BasicLinearAlgebra"
+  },
+  {
+    "Sourcefile": "G:\\MyProjects\\TriangularRobot\\build\\sketch\\robot.ino.cpp",
+    "Include": "FastLED.h",
+    "Includepath": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src"
+  },
+  {
+    "Sourcefile": "G:\\MyProjects\\TriangularRobot\\build\\sketch\\robot.ino.cpp",
+    "Include": "WiFi.h",
+    "Includepath": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\WiFi\\src"
+  },
+  {
+    "Sourcefile": "G:\\MyProjects\\TriangularRobot\\build\\sketch\\robot.ino.cpp",
+    "Include": "EEPROM.h",
+    "Includepath": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\EEPROM\\src"
+  },
+  {
+    "Sourcefile": "G:\\MyProjects\\TriangularRobot\\build\\sketch\\robot.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\PCA9685_16-Channel_PWM_Driver_Module_Library\\src\\PCA9685.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\Wire\\src\\Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\FastLED.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\bitswap.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\colorpalettes.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\colorutils.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\hsv2rgb.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\lib8tion.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\noise.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\platforms\\esp\\32\\clockless_rmt_esp32.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\platforms.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\power_mgt.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\Documents\\Arduino\\libraries\\FastLED\\src\\wiring.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\WiFi\\src\\WiFi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\WiFi\\src\\WiFiAP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\WiFi\\src\\WiFiClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\WiFi\\src\\WiFiGeneric.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\WiFi\\src\\WiFiMulti.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\WiFi\\src\\WiFiSTA.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\WiFi\\src\\WiFiScan.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\WiFi\\src\\WiFiServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\WiFi\\src\\WiFiUdp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\samaz\\AppData\\Local\\Arduino15\\packages\\esp32-bluepad32\\hardware\\esp32\\4.1.0\\libraries\\EEPROM\\src\\EEPROM.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
