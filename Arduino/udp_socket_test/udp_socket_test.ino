@@ -1,5 +1,4 @@
 #include <WiFi.h>
-#include<FastLED.h>
 
 // Wi-Fi credentials
 #define LED_PIN 5
@@ -8,25 +7,24 @@
 #define NUM_LEDS (MATRIX_WIDTH * MATRIX_HEIGHT)
 #define DATA_LEN 64*3
 
-// LED array
-CRGB leds[NUM_LEDS];
+uint16_t total_frames=1;
+uint16_t fps =1;
+uint16_t brightness =10;
+uint8_t color_correction[3] = {255,255,255}; 
+uint8_t led_data[50*DATA_LEN];
+
 
 
 const char* ssid = "drazam_plus";
 const char* password = "fallguys";
-uint8_t led_data[DATA_LEN];
 
 // Server settings
 const int serverPort = 12345;
 WiFiServer server(serverPort);
 
 void displayCb();
-void ledMatrixSetup(){
-    FastLED.addLeds<WS2812, LED_PIN, GRB>(leds, NUM_LEDS);
-    FastLED.setBrightness(100);
-    FastLED.clear();
-    FastLED.show();
-}
+void socketDataProcessor();
+
 void setup() {
   Serial.begin(115200);
 
@@ -44,8 +42,6 @@ void setup() {
   server.begin();
   Serial.println("TCP server started!");
 
-  //setup the led matrix
-  ledMatrixSetup();
 }
 
 void loop() {
@@ -60,8 +56,8 @@ void loop() {
         Serial.println("Received: ");
 
         // Echo the message back
-        displayCb();
-        client.println("Displayed");
+        socketDataProcessor();
+        client.println("Thanks Paisi");
       }
     }
     Serial.println("Client disconnected.");
@@ -71,25 +67,44 @@ void loop() {
 
 
 
-void displayCb()
-{
-    static int count =0;
-    Serial.print(count++);
-    digitalWrite(2, HIGH - digitalRead(2)); // blink the led
+void socketDataProcessor(WiFiClient &client){
 
-    int stride0 = 24;
-    int stride1 = 3;
+    size_t frame_len =client.readBytes((char *)&total_frames,sizeof(total_frames));
+    size_t fps_len =client.readBytes((char *)&fps,sizeof(fps));
+    size_t brightness_len =client.readBytes((char *)&brightness,sizeof(brightness));
+    size_t correc_len =client.readBytes((char *)&color_correction,sizeof(color_correction));
 
-
-    for(int x = 0 ; x < MATRIX_HEIGHT ; x++){
-        for(int y = 0 ; y < MATRIX_WIDTH ; y++){
-            uint8_t ir = led_data[x*stride0 + y*stride1 + 0];
-            uint8_t ig = led_data[x*stride0 + y*stride1 + 1];
-            uint8_t ib = led_data[x*stride0 + y*stride1 + 2];
-            CRGB color = CRGB(ir,ig,ib);
-            leds[x*8 + y] = color;;
-        }
+    if(total_frames > 50 or total_frames < 1){
+        client.print("Led Data error");
+        return;
     }
-    FastLED.show();
+    if(fps < 1 or fps > 60){
+
+        client.print("Led Data error");
+        return;
+    }
+    if( brightness < 0 or brightness > 255){
+
+        client.print("Led Data error");
+        return;
+    }
+    if(frame_len != sizeof(total_frames) or fps_len != sizeof(fps) or brightness_len != sizeof(brightness) or correc_len != sizeof(color_correction)){
+
+        client.print("Led Data error");
+        return;
+    }
+
+    Serial.print("Received: ");
+    Serial.printf("frame %d fps %d brightness %d\n",total_frames,fps,brightness);
+
+    size_t len = client.readBytes(led_data,total_frames*DATA_LEN);
+
+    for(int i = 0 ; i < sizeof(led_data); i++){
+      Serial.print(i);
+      Serial.print(' ');
+    }
+    Serial.println();
+    
+    client.print("Thanks paisi");
     return;
 }
